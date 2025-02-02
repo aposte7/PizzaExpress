@@ -5,7 +5,7 @@
   --color-yellow-100: #d9ef1b;
   --color-yellow-200: #c0e916;
   --color-yellow-300: #a6e311;
-  --color-yellow-400: #9de10f;
+  --color-yellow-400: #7dde4d;
   --color-yellow-500: #73d707;
   --color-yellow-600: #44d800;
   --color-yellow-700: #59d102;
@@ -15,6 +15,7 @@
 }
 
 .loader {
+  color: #7dde4d;
   width: 45px;
   aspect-ratio: 0.75;
   --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
