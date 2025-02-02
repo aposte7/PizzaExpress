@@ -1,1 +1,54 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-yellow-50: #f3f520;
+  --color-yellow-100: #d9ef1b;
+  --color-yellow-200: #c0e916;
+  --color-yellow-300: #a6e311;
+  --color-yellow-400: #9de10f;
+  --color-yellow-500: #73d707;
+  --color-yellow-600: #44d800;
+  --color-yellow-700: #59d102;
+  --color-yellow-800: #59d102;
+  --color-yellow-900: #1fd224;
+  --color-yellow-950: #06d400;
+}
+
+.loader {
+  width: 45px;
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
+  background:
+    var(--c) 0% 50%,
+    var(--c) 50% 50%,
+    var(--c) 100% 50%;
+  background-size: 20% 50%;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  20% {
+    background-position:
+      0% 0%,
+      50% 50%,
+      100% 50%;
+  }
+  40% {
+    background-position:
+      0% 100%,
+      50% 0%,
+      100% 50%;
+  }
+  60% {
+    background-position:
+      0% 50%,
+      50% 100%,
+      100% 0%;
+  }
+  80% {
+    background-position:
+      0% 50%,
+      50% 50%,
+      100% 100%;
+  }
+}
